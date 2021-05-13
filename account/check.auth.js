@@ -15,12 +15,13 @@ function getCookie(cname) {
 }
 
 if (getCookie == null) {} else {
+	var xhttp = new XMLHttpRequest
 	xhttp.open("POST", "https://auth.scratchblox.tk/auth", true);
 	xhttp.setRequestHeader("Content-type", "");
 	xhttp.send();
 	xhttp.onreadystatechange = function() {
   		if (this.readyState == 4 && this.status == 200) {
-    		console.log(this.responseText);
+    			console.log(this.responseText);
   		} else {
 			console.log("Invalid")
 		}
