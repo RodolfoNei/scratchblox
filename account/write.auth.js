@@ -13,7 +13,7 @@ function getCookie(cname) {
   }
   return null;
 }
-document.body.onload = () => {
+window.onload = () => {
 const message = document.getElementById("message")
 if (getCookie("regmsg") == null) {} else {
 	message.innerHTML = getCookie("regmsg")
