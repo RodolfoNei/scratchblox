@@ -18,7 +18,7 @@ function getCookie(cname) {
   return null;
 }
 
-if (getCookie("scratchstoken") == null) {} else {
+if (getCookie("scratchbloxstoken") == null) {} else {
 	var xhttp = new XMLHttpRequest
 	xhttp.open("POST", "https://auth.scratchblox.tk/auth", true);
 	xhttp.setRequestHeader("Content-type", "");
