@@ -13,7 +13,6 @@ function getCookie(cname) {
   }
   return null;
 }
-console.log("loaded")
 
 if (getCookie("scratchstoken") == null) {window.location.assign("https://web.scratchblox.tk/account/login")} else {
 	var xhttp = new XMLHttpRequest
