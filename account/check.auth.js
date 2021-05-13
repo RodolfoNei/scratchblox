@@ -21,9 +21,7 @@ if (getCookie(scratchstoken) == null) {} else {
 	xhttp.send();
 	xhttp.onreadystatechange = function() {
   		if (this.readyState == 4 && this.status == 200) {
-    			console.log(this.responseText);
-  		} else {
-			console.log("Invalid")
-		}
+    			window.location.assign("https://web.scratchblox.tk/home")
+  		} else {}
 	};
 }
