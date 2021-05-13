@@ -10,7 +10,7 @@ function getCookie(cname) {
     if (c.indexOf(name) == 0) {
 	res = Array.from(c.substring(name.length, c.length))
 	res[0] = ""
-	res[res.length]
+	res[res.length] = ""
 	response = res.join('')
       return response;
     }
