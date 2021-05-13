@@ -13,19 +13,6 @@ function getCookie(cname) {
   }
   return null;
 }
-
-if (getCookie(scratchstoken) == null) {} else {
-	var xhttp = new XMLHttpRequest
-	xhttp.open("POST", "https://auth.scratchblox.tk/auth", true);
-	xhttp.setRequestHeader("Content-type", "");
-	xhttp.send();
-	xhttp.onreadystatechange = function() {
-  		if (this.readyState == 4 && this.status == 200) {
-    			window.location.assign("https://web.scratchblox.tk/home")
-  		} else {}
-	};
-}
-
 document.body.onload = () => {
 const message = document.getElementById("message")
 if (getCookie("regmsg") == null) {} else {
