@@ -18,7 +18,7 @@ function getCookie(cname) {
   return null;
 }
 
-if (getCookie("scratchstoken") == null) {window.location.assign("https://web.scratchblox.tk/account/login")} else {
+if (getCookie("scratchstoken") == null) {/*window.location.assign("https://web.scratchblox.tk/account/login"*/)} else {
 	var xhttp = new XMLHttpRequest
 	xhttp.open("POST", "https://auth.scratchblox.tk/auth", true);
 	xhttp.setRequestHeader("Content-type", "");
@@ -27,7 +27,7 @@ if (getCookie("scratchstoken") == null) {window.location.assign("https://web.scr
   		if (this.readyState == 4 && this.status == 200) {
     			window.location.assign("https://web.scratchblox.tk/home")
   		} else {
-          window.location.assign("https://web.scratchblox.tk/account/login")
+          //window.location.assign("https://web.scratchblox.tk/account/login")
       }
 	};
 }
