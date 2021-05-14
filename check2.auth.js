@@ -22,7 +22,7 @@ if (getCookie("scratchbloxstoken") == null) {/*window.location.assign("https://w
 	var xhttp = new XMLHttpRequest
 	xhttp.open("POST", "https://auth.scratchblox.tk/auth", true);
 	xhttp.setRequestHeader("cookie", getCookie("scratchbloxstoken"));
-	xhttp.send();
+	xhttp.send({cookie: getCookie("scratchbloxstoken")});
 	xhttp.onreadystatechange = function() {
   		if (this.readyState == 4 && this.status == 200) {
     			window.location.assign("https://web.scratchblox.tk/home")
