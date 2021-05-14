@@ -16,8 +16,8 @@ function getCookie(cname) {
 
 if (getCookie("scratchbloxstoken") == null) {} else {
 	var xhttp = new XMLHttpRequest
-	xhttp.setRequestHeader("Content-Type", "application/json; charset=utf-8");
 	xhttp.open("POST", "https://auth.scratchblox.tk/auth", true);
+	xhttp.setRequestHeader("Content-Type", "application/json; charset=utf-8");
 	xhttp.send(JSON.stringify({cookie: getCookie("scratchbloxstoken")}));
 	xhttp.onreadystatechange = function() {
   		if (this.readyState == 4 && this.status == 200) {
