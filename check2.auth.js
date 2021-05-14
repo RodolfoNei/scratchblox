@@ -21,8 +21,8 @@ function getCookie(cname) {
 if (getCookie("scratchbloxstoken") == null) {/*window.location.assign("https://web.scratchblox.tk/account/login")*/} else {
 	var xhttp = new XMLHttpRequest
 	xhttp.open("POST", "https://auth.scratchblox.tk/auth", true);
-	xhttp.setRequestHeader("cookie", getCookie("scratchbloxstoken"));
-	xhttp.send({cookie: getCookie("scratchbloxstoken")});
+	xhttp.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+	xhttp.send(JSON.stringify({cookie: getCookie("scratchbloxstoken")}));
 	xhttp.onreadystatechange = function() {
   		if (this.readyState == 4 && this.status == 200) {
     			window.location.assign("https://web.scratchblox.tk/home")
