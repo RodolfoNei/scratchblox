@@ -8,11 +8,7 @@ function getCookie(cname) {
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
-      	res = Array.from(c.substring(name.length, c.length))
-	res[0] = ""
-	res[res.length - 1] = ""
-	response = res.join('')
-      return response;
+      return c.substring(name.length, c.length);
     }
   }
   return null;
