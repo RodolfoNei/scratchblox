@@ -1,1 +1,43 @@
+body{
+                text-align: center;
+                background-color: #FFFFFF;
+            }
+            
+            h1{
+                font-size: 50;
+                color: #6DDCCF;
+                background-color: #EEEEEE;
+                padding: 40px;
+            }
+            h2{
+                color: #94EBCD;
+                background-color: #EEEEEE;
+                padding: 20px;
+            }
+            p{
+                color: #000000;
+                background-color: #D7EFFF;
+                padding: 50px;
+            }
+            article{
+                color: #000000;
+                background-color: #C7FCFF;
+                padding: 25px;
+            }
+            img{
+                border-radius: 2rem;
+                background-color: #EEEEEE;
+                padding: 50;
+                box-shadow: 1rem 1rem 1rem color: #f0f0f0;}
+            
+nav-link{
+    display: block;
+    padding: 1rem 6rem;
+    background-color: #FFEFA1;
+}
+
+nav-link:hover{
+    box-sizing: border-box;
+    background-color: #C7FCFF;
+}
 
